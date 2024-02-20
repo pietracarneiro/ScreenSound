@@ -6,16 +6,20 @@
 // disponível
 
 Musica musica1 = new Musica();
-musica1.nome = "Formation";
-musica1.artista = "Beyoncé";
-musica1.duracao = 326;
-musica1.disponivel = true;
+musica1.Nome = "Formation";
+musica1.Artista = "Beyoncé";
+musica1.Duracao = 326;
+musica1.Disponivel = true;
+//musica1.EscreveDisponivel(true);
+//Console.WriteLine(musica1.LerDisponivel());
 
 Musica musica2 = new Musica();
-musica2.nome = "Paparazzi";
-musica2.artista = "Lady Gaga";
-musica2.duracao = 328;
-musica2.disponivel = false;
+musica2.Nome = "Paparazzi";
+musica2.Artista = "Lady Gaga";
+musica2.Duracao = 328;
+musica2.Disponivel = false;
+//musica2.EscreveDisponivel(false);
+//Console.WriteLine(musica2.LerDisponivel());
 
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
