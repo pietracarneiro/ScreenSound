@@ -1,68 +1,55 @@
-﻿Album albumDaBeyonce = new Album();
-albumDaBeyonce.Nome = "Renaissance";
+﻿using ScreenSound;
 
-Musica musica1 = new Musica();
-musica1.Nome = "I'M THAT GIRL";
+Artista beyonce = new Artista("Beyonce");
+
+Album albumDaBeyonce = new Album("Renaissance");
+
+Musica musica1 = new Musica(beyonce, "I'M THAT GIRL");
 musica1.Duracao = 328;
 
-Musica musica2 = new Musica();
-musica2.Nome = "COZY";
+Musica musica2 = new Musica(beyonce, "COZY");
 musica2.Duracao = 330;
 
-Musica musica3 = new Musica();
-musica3.Nome = "ALIEN SUPERSTAR";
+Musica musica3 = new Musica(beyonce, "ALIEN SUPERSTAR");
 musica3.Duracao = 339;
 
-Musica musica4 = new Musica();
-musica4.Nome = "CUFF IT";
+Musica musica4 = new Musica(beyonce, "CUFF IT");
 musica4.Duracao = 348;
 
-Musica musica5 = new Musica();
-musica5.Nome = "ENERGY (feat. BEAM)";
+Musica musica5 = new Musica(beyonce, "ENERGY (feat. BEAM)");
 musica5.Duracao = 317;
 
-Musica musica6 = new Musica();
-musica6.Nome = "BREAK MY SOUL";
+Musica musica6 = new Musica(beyonce, "BREAK MY SOUL");
 musica6.Duracao = 437;
 
-Musica musica7 = new Musica();
-musica7.Nome = "CHURCH GIRL";
+Musica musica7 = new Musica(beyonce, "CHURCH GIRL");
 musica7.Duracao = 303;
 
-Musica musica8 = new Musica();
-musica8.Nome = "PLASTIC OFF THE SOFA";
+Musica musica8 = new Musica(beyonce, "PLASTIC OFF THE SOFA");
 musica8.Duracao = 318;
 
-Musica musica9 = new Musica();
-musica9.Nome = "VIRGO'S GROOVE";
+Musica musica9 = new Musica(beyonce, "VIRGO'S GROOVE");
 musica9.Duracao = 307;
 
-Musica musica10 = new Musica();
-musica10.Nome = "MOVE (feat. Grace Jones & Tems)";
+Musica musica10 = new Musica(beyonce, "MOVE (feat. Grace Jones & Tems)");
 musica10.Duracao = 340;
 
-Musica musica11 = new Musica();
-musica11.Nome = "HEATED";
+Musica musica11 = new Musica(beyonce, "HEATED");
 musica11.Duracao = 323;
 
-Musica musica12 = new Musica();
-musica12.Nome = "THIQUE";
+Musica musica12 = new Musica(beyonce, "THIQUE");
 musica12.Duracao = 248;
 
-Musica musica13 = new Musica();
-musica13.Nome = "ALL UP IN YOUR MIND";
+Musica musica13 = new Musica(beyonce, "ALL UP IN YOUR MIND");
 musica13.Duracao = 249;
 
-Musica musica14 = new Musica();
-musica14.Nome = "AMERICA HAS A PROBLEM";
+Musica musica14 = new Musica(beyonce, "AMERICA HAS A PROBLEM");
 musica14.Duracao = 341;
 
-Musica musica15 = new Musica();
-musica15.Nome = "PURE/HONEY";
+Musica musica15 = new Musica(beyonce, "PURE/HONEY");
 musica15.Duracao = 423;
 
-Musica musica16 = new Musica();
-musica16.Nome = "SUMMER RENAISSANCE";
+Musica musica16 = new Musica(beyonce, "SUMMER RENAISSANCE");
 musica16.Duracao = 454;
 
 albumDaBeyonce.AdicionarMusica(musica1);
@@ -83,3 +70,7 @@ albumDaBeyonce.AdicionarMusica(musica15);
 albumDaBeyonce.AdicionarMusica(musica16);
 
 albumDaBeyonce.ExibirMusicasDoAlbum();
+
+beyonce.AdicionarAlbum(albumDaBeyonce);
+beyonce.ExibirDiscografia();
+musica1.ExibirFichaTecnica();
