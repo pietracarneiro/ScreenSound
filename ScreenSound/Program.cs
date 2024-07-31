@@ -1,5 +1,8 @@
 ﻿using ScreenSound;
 
+// Exemplos de Album, Música e Artista
+Console.WriteLine("******** Músicas ********\n");
+
 Artista beyonce = new Artista("Beyonce");
 
 Album albumDaBeyonce = new Album("Renaissance");
@@ -70,7 +73,27 @@ albumDaBeyonce.AdicionarMusica(musica15);
 albumDaBeyonce.AdicionarMusica(musica16);
 
 albumDaBeyonce.ExibirMusicasDoAlbum();
+Console.WriteLine();
 
 beyonce.AdicionarAlbum(albumDaBeyonce);
 beyonce.ExibirDiscografia();
 musica1.ExibirFichaTecnica();
+
+// Exemplos de Podcast
+Console.WriteLine("\n\n******** Podcasts ********");
+
+Episodio ep1 = new(3, 45, "Técnicas de Facilitação");
+ep1.AdicionarConvidados("Maria");
+ep1.AdicionarConvidados("Marcelo");
+
+Episodio ep2 = new(2, 67, "Tecnicas de aprendizado");
+ep2.AdicionarConvidados("Rafael");
+ep2.AdicionarConvidados("Pietra");
+ep2.AdicionarConvidados("Ana");
+
+Podcast podcast = new("Lana Silva", "EstudandoCast");
+podcast.AdicionarEpisodio(ep1);
+podcast.AdicionarEpisodio(ep2);
+podcast.ExibirDetalhes();
+
+

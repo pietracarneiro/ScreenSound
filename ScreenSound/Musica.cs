@@ -14,7 +14,7 @@ class Musica
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
     public string DescriçãoResumida => 
-        $"A música {Nome} pertence à {Artista}";
+        $"A música {Nome} pertence à {Artista.Nome}";
     // Fornecendo o valor do get
     //{
 
