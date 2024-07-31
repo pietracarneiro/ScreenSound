@@ -1,3 +1,3 @@
-# Projeto utlizando programação orientada a objetos 
+# Projeto utilizando programação orientada a objetos 
 ### Stack: C#
 ### Tema: Música
